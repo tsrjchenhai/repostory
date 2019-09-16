@@ -31,7 +31,7 @@ public class SpringRedisTest {
 	public StringRedisTemplate stringRedisTemplate;
 	@Test
 	public void stringTest(){
-		//a
+		//aasdfasdf
 		//c444
 		//asdasdasd
 		//c444
