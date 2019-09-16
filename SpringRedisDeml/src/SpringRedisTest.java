@@ -32,6 +32,7 @@ public class SpringRedisTest {
 	@Test
 	public void stringTest(){
 		//a
+		//c
 		//asdasdasd
 		//通过操作模板获取对String类型操作的对象-ValueOperations
 		ValueOperations<String, String> opsForValue = stringRedisTemplate.opsForValue();
