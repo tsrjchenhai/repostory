@@ -31,11 +31,11 @@ public class SpringRedisTest {
 	public StringRedisTemplate stringRedisTemplate;
 	@Test
 	public void stringTest(){
-		//b
 		//a
-		//213123
 		//c444
 		//asdasdasd
+		//c444
+				//asdasdasd
 		//ͨ������ģ���ȡ��String���Ͳ����Ķ���-ValueOperations
 		ValueOperations<String, String> opsForValue = stringRedisTemplate.opsForValue();
 		//���key-value
