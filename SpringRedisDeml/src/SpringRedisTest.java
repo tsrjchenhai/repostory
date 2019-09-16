@@ -20,9 +20,9 @@ import com.sun.org.apache.xml.internal.serializer.OutputPropertiesFactory;
 
 /**
 *@author helon111
-*@version ´´½¨Ê±¼ä£º2017Äê9ÔÂ14ÈÕ
-*@ClassName ÀàÃû³Æ
-*@Description ÀàÃèÊö
+*@version ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£º2017ï¿½ï¿½9ï¿½ï¿½14ï¿½ï¿½
+*@ClassName ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+*@Description ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:spring-redis.xml")
@@ -34,108 +34,110 @@ public class SpringRedisTest {
 		//a
 		//c444
 		//asdasdasd
-		//Í¨¹ý²Ù×÷Ä£°å»ñÈ¡¶ÔStringÀàÐÍ²Ù×÷µÄ¶ÔÏó-ValueOperations
+		//c444
+				//asdasdasd
+		//Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½È¡ï¿½ï¿½Stringï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½-ValueOperations
 		ValueOperations<String, String> opsForValue = stringRedisTemplate.opsForValue();
-		//Ìí¼Ókey-value
+		//ï¿½ï¿½ï¿½key-value
 		//opsForValue.set("name", "ksdfdsfj");
 		
-		//ºúÉèÖÃkey-valueÓÐÐ§ÆÚ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½key-valueï¿½ï¿½Ð§ï¿½ï¿½
 		//opsForValue.set("time", "123", 10, TimeUnit.SECONDS);
 		
-		//×·¼Ó
+		//×·ï¿½ï¿½
 //		opsForValue.append("name", "123");
-		//»ñÈ¡ÔªËØÖµ
+		//ï¿½ï¿½È¡Ôªï¿½ï¿½Öµ
 //		System.out.println(opsForValue.get("name"));
 		
-//		//É¾³ýkey-value
+//		//É¾ï¿½ï¿½key-value
 //		stringRedisTemplate.delete("name");
 //		System.out.println(opsForValue.get("name"));
 		
-		//Ôö¼õ²Ù×÷
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		//opsForValue.increment("num", -10);
 	}
 	@Test
 	public void listTest(){
 		
 		ListOperations<String, String> opsForList = stringRedisTemplate.opsForList();
-		//²åÈëµ¥Ìõ
+		//ï¿½ï¿½ï¿½ëµ¥ï¿½ï¿½
 //		opsForList.leftPush("list", "qq");
 		
-		//²åÈë¶àÌõ£¿
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		opsForList.leftPush("list", "qq");
 		
 //		ArrayList<String> arrayList = new ArrayList<>();
 //		arrayList.add("rr");
 //		arrayList.add("tty");
 //		arrayList.add("aa");
-		//ÅúÁ¿²åÈë
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		opsForList.leftPushAll("list", arrayList);
 		
-		//»ñÈ¡index·¶Î§ÔªËØ
+		//ï¿½ï¿½È¡indexï¿½ï¿½Î§Ôªï¿½ï¿½
 //		List<String> range = opsForList.range("list", 0, 3);
 //		System.out.println(range);
 		
 //		System.out.println(opsForList.index("list", 3));
 		
-		//×óÓÒµ¯³öµÚÒ»Ìõ¼ÇÂ¼
+		//ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Â¼
 //		String leftPop = opsForList.leftPop("list");
 //		System.out.println(leftPop);
 //		String riPop = opsForList.rightPop("list");
 //		System.out.println(riPop);
 		
-		//¸ù¾ÝcountsÑ¡Ôñ²»Í¬É¾³ý²ßÂÔ
-		//×óÉ¾³ý
+		//ï¿½ï¿½ï¿½ï¿½countsÑ¡ï¿½ï¿½Í¬É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		//ï¿½ï¿½É¾ï¿½ï¿½
 //		opsForList.remove("list", 2, "tt");
-//		//ÓÒÉ¾³ý
+//		//ï¿½ï¿½É¾ï¿½ï¿½
 //		opsForList.remove("list", -1, "tt");
 //		//È«É¾
 //		opsForList.remove("list", 0, "tt");
 		
-		//¸ù¾ÝÏÂ±êÐÞ¸Ä
+		//ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½ï¿½Þ¸ï¿½
 		//opsForList.set("list", 1, "fangjicai");
 		
-		//ºóÈ¥¼¯ºÏ³¤¶È
+		//ï¿½ï¿½È¥ï¿½ï¿½ï¿½Ï³ï¿½ï¿½ï¿½
 		System.out.println(opsForList.size("list"));	
 	}
 	@Test
 	public void hashTest(){
 		HashOperations<String, Object, Object> opsForHash = stringRedisTemplate.opsForHash();
-		//²åÈëµ¥Ìõ×Ö¶Î
+		//ï¿½ï¿½ï¿½ëµ¥ï¿½ï¿½ï¿½Ö¶ï¿½
 		//opsForHash.put("hash", "name", "fangjicai");
 		
 //		HashMap<Object,Object> hashMap = new HashMap<>();
 //		hashMap.put("age", "10");
 //		hashMap.put("sex", "man");
-//		//ÅúÁ¿²åÈë
+//		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		opsForHash.putAll("hash", hashMap);
 		
-		//»ñÈ¡Ö¸¶¨×Ö¶ÎÖµ
+		//ï¿½ï¿½È¡Ö¸ï¿½ï¿½ï¿½Ö¶ï¿½Öµ
 		//System.out.println(opsForHash.get("hash", "name"));
 		
 //		System.out.println(opsForHash.size("hash"));
 		
-		//»ñÈ¡key»òÕßvalueµÄ¼¯ºÏ
+		//ï¿½ï¿½È¡keyï¿½ï¿½ï¿½ï¿½valueï¿½Ä¼ï¿½ï¿½ï¿½
 //		System.out.println(opsForHash.keys("hash"));
 //		System.out.println(opsForHash.values("hash"));
 	}
 	@Test
 	public void setTest(){
 		SetOperations<String, String> opsForSet = stringRedisTemplate.opsForSet();
-		//²åÈëµ¥Ìõ
+		//ï¿½ï¿½ï¿½ëµ¥ï¿½ï¿½
 //		opsForSet.add("set", "qq");
 		
-		//»ñÈ¡ËùÓÐ³ÉÔ±
+		//ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ð³ï¿½Ô±
 //		Set<String> members = opsForSet.members("set");
 //		System.out.println(members);
 		
-		//É¾³ýÔªËØ
+		//É¾ï¿½ï¿½Ôªï¿½ï¿½
 		//opsForSet.remove("set", "qq");
 		
-		//²é¿´¼¯ºÏ³ÉÔ±ÊÇ·ñ´æÔÚ
+		//ï¿½é¿´ï¿½ï¿½ï¿½Ï³ï¿½Ô±ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
 //		Boolean member = opsForSet.isMember("set", "qq");
 //		System.out.println(member);
 		
-		//»ñÈ¡¼¯ºÏ³¤¶È
+		//ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ï³ï¿½ï¿½ï¿½
 		System.out.println(opsForSet.size("set"));
 	}
 	@Test
